@@ -1,0 +1,255 @@
+/* body section */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #faf3e0;
+    color: #333;
+    margin: 0;
+    display: flex;
+  }
+  
+  /* nav bar sections */
+  #navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 290px;
+    height: 100vh;
+    background-color: #faf3e0;
+    border-right: 3px solid #a99162;
+  }
+  #navbar img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+  }
+  
+  #navbar header {
+    font-size: 50px;
+    font-weight: 100;
+    text-align: center;
+    font-family: "Kodchasan", sans-serif;
+    margin-bottom: 30px;
+    color: black;
+  }
+  
+  #navbar ul {
+    padding: 0;
+  }
+  
+  #navbar ul li {
+    margin: 10px 0;
+    padding: 8px 0;
+    border-top: 3px solid #a99162;
+  }
+  
+  .nav-link {
+    display: block;
+    color: #fff;
+    font-size: 22px;
+    padding: 8px;
+    font-family: "Lilita One", sans-serif;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #a99162;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: left;
+  }
+  
+  .nav-link:hover {
+    background-color: #a99162;
+    color: #fff;
+  }
+  
+  /* Main Content */
+  #main-doc {
+    margin-left: 270px;
+    padding: 20px;
+    flex-grow: 1;
+  }
+  
+  .main-section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  /* Introduction Section */
+  #Introduction {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  #Introduction header {
+    font-size: 70px;
+    text-transform: uppercase;
+    font-family: "Lilita One", sans-serif;
+    -webkit-text-stroke: 3px #a99162;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  #Introduction img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+  }
+  
+  #Introduction p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto 15px;
+    text-align: justify;
+    font-family: "Kodchasan", sans-serif;
+  }
+  
+  /* Rest of sections */
+  #Installation_\&_Setup header,
+  #Using_AI header,
+  #Customization header,
+  #Magic_API header,
+  #Troubleshooting header {
+    font-size: 70px;
+    text-transform: uppercase;
+    font-family: "Lilita One", sans-serif;
+    -webkit-text-stroke: 3px #a99162;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  #Installation_\&_Setup::before,
+  #Using_AI::before,
+  #Customization::before,
+  #Magic_API::before,
+  #Troubleshooting::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #a99162;
+    margin: 20px 0;
+  }
+  /* Apply Kodchasan font to all paragraphs in Installation */
+  #Installation_\&_Setup p,
+  #Using_AI p,
+  #Customization p,
+  #Magic_API p,
+  #Troubleshooting p {
+    font-family: "Kodchasan", sans-serif;
+    text-align: left;
+  }
+  /* Bold Subheadings */
+  #Installation_\&_Setup p strong,
+  #Using_AI p strong,
+  #Customization p strong,
+  #Magic_API p strong,
+  #Troubleshooting p strong {
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+  }
+  /* List Styling */
+  #Using_AI ul li,
+  #Customization ul li,
+  #Magic_API ul li,
+  #Troubleshooting ul li {
+    margin-bottom: 5px;
+    padding-left: 20px;
+    margin-top: 10px;
+    font-family: "Kodchasan", sans-serif;
+  }
+  #Magic_API ul,
+  #Magic_API ol,
+  #Installation_\&_Setup ul,
+  #Installation_\&_Setup ol {
+    padding-left: 20px;
+    margin-top: 10px;
+    font-family: "Kodchasan", sans-serif;
+  }
+  
+  #Installation_\&_Setup ul li,
+  #Installation_\&_Setup ol {
+    margin-bottom: 5px;
+  }
+  /* Hyperlink Styling */
+  #Installation_\&_Setup a {
+    color: #a99162;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  #Installation_\&_Setup pre,
+  #Using_AI pre,
+  #Customization pre,
+  #Magic_API pre,
+  #Troubleshooting pre {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: monospace;
+    width: 773px;
+    height: 130px;
+    border: 4px solid #a99162;
+  }
+  
+  #Installation_\&_Setup pre code,
+  #Using_AI pre code,
+  #Customization pre code,
+  #Magic_API pre code,
+  #Troubleshooting pre code {
+    font-size: 16px;
+    display: block;
+  }
+  /*Responsive media query*/
+  @media screen and (max-width: 720px) {
+    html,
+    body {
+      overflow-x: hidden;
+    }
+    body {
+      position: relative;
+    }
+  
+    #navbar {
+      position: fixed;
+  
+      top: 0;
+  
+      width: 100%;
+  
+      height: auto;
+  
+      background-color: #faf3e0;
+  
+      border-bottom: 4px solid #a99162;
+  
+      z-index: 999;
+    }
+  
+    #navbar img.nav-logo {
+      display: none; /* This will hide the image completely, since at it’s current size it takes up too much space */
+    }
+  
+    #main-doc {
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 20px;
+      padding-top: 500px;
+      width: 90%;
+      max-width: 600px;
+      height: auto;
+      align-items: center;
+    }
+  
+    /* Remove margin-top offset that's no longer needed */
+  
+    .main-section {
+      padding-top: 0;
+  
+      margin-top: 0;
+    }
+  }
+  
